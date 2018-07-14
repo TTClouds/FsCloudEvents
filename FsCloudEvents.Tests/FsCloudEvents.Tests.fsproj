@@ -13,5 +13,8 @@
     <Compile Include="CloudEvents.Tests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FsCloudEvents\FsCloudEvents.fsproj" />
+  </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

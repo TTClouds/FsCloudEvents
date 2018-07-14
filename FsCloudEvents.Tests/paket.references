@@ -1,3 +1,5 @@
 NUnit
 FSharp.Core
 Chessie
+FsUnit
+FsCheck
