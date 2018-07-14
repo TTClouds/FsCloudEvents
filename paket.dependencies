@@ -1,1 +1,4 @@
 source https://www.nuget.org/api/v2
+nuget Chessie
+nuget FSharp.Core
+nuget NUnit
