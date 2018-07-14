@@ -231,12 +231,16 @@ module ``CloudEventContext Validate Tests`` =
     [<Test>]
     let ``Validate.contentType Some "not a valid media type"``() =
         let expected : Result<unit, _> = Bad ["If present, contentType MUST adhere to the format specified in RFC 2046"]
-        Some "not a valid media type" |> Validate.contentType |> should equal expected
+        Some "not a valid media type" 
+        |> Validate.contentType 
+        |> should equal expected
 
     [<Test>]
     let ``Validate.contentType Some "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"``() =
         let expected : Result<unit, string> = ok()
-        Some "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" |> Validate.contentType |> should equal expected
+        Some "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" 
+        |> Validate.contentType 
+        |> should equal expected
 
 
 module ``CloudEvent Tests`` =
