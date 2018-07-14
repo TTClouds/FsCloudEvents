@@ -1,0 +1,8 @@
+
+### Build Results
+[Bb]in/
+[Oo]bj/
+[Ll]ogs?/
+
+### Dependency Management
+/paket-files/
